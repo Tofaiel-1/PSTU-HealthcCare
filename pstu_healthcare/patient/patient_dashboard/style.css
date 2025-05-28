@@ -1,0 +1,86 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  display: flex;
+  min-height: 100vh;
+  color: #333;
+}
+
+
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  padding: 40px 50px;
+  flex-grow: 1;
+}
+
+.main-header {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #475569;
+}
+
+/* Info cards grid */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 18px;
+  color: #334155;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px 25px;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,102 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  /* Leave space for fixed sidebar */
+  padding-left: 260px;
+}
+
+/* Content area */
+.content {
+  padding: 40px 50px;
+  background: #f0f4f8;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+/* Profile form styles */
+h1 {
+  margin-bottom: 25px;
+  color: #1e293b;
+  font-weight: 700;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #475569;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #3b82f6;
+  color: white;
+  padding: 14px 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success {
+  color: #22c55e;
+}
+
+.error {
+  color: #ef4444;
+}
